@@ -1,0 +1,19 @@
+{
+  "title": "A Small Demo Book",
+  "subtitle": "Fictional example for one-person-company-book-writer",
+  "author": "Demo Author",
+  "book_type": "ai-practice",
+  "draft_lang": "en",
+  "edition_lang": "en",
+  "slug": "demo-book",
+  "formats": ["ebook"],
+  "kdp_select": false,
+  "evidence_repo": "",
+  "chapters": ["ch01.md", "ch02.md"],
+  "toc_items": ["Chapter 1", "Chapter 2"],
+  "targets": {"chapter_min": 50, "chapter_max": 4500, "appendix_min": 0, "appendix_max": 2000},
+  "ai_disclosure": {"text": "ai-generated", "images": "none", "translation": "none"},
+  "public_sources": [],
+  "cover": "",
+  "status": "DRAFT"
+}
