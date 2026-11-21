@@ -7,12 +7,12 @@ A writing workflow (an AI-agent "skill") for turning work you actually did into 
 ## What it does / 它做什么
 
 - **Evidence first.** Each paragraph about something that happened ends with an evidence mark such as `[ev: 1a2b3c4]`, pointing at a commit, a message id or a file in your own record repository. `check_book.py` verifies every mark against that repository.
-- **Red lines checked automatically.** Secrets, email addresses and phone numbers, reviews in exchange for free books, health-cure promises, unverified income figures, unlicensed third-party images, and KDP Select's 10% limit on content published elsewhere.
+- **Red lines checked automatically.** Secrets, email addresses and phone numbers, reviews in exchange for free books, health-cure promises, unverified income figures, unlicensed third-party images, and, for books planned for KDP Select, any overlap with text you have published elsewhere, flagged for the author to review (during each 90-day term the Kindle ebook may be distributed only through KDP and public libraries; there is no safe percentage).
 - **The author decides.** Templates leave `【待 Human 补写】` ("to be written by the author") slots for first-hand stories; the scripts never write them. Publishing, pricing and KDP Select stay with the author.
 - **Output.** Merged Markdown/HTML (optional PDF via playwright), an EPUB 3 for KDP upload, a KDP metadata draft with field checks, and a royalty calculator that always prints the file size it used.
 
 - **先证据：** 段末挂 `[ev: …]`，指向你自己记录仓里的提交、消息编号或文件；`check_book.py` 逐个核对。
-- **红线自动查：** 秘密、邮箱手机号、以书换评论、疗效承诺、未核实的收入数字、未授权的第三方图像、KDP Select 站外公开 10% 上限。
+- **红线自动查：** 秘密、邮箱手机号、以书换评论、疗效承诺、未核实的收入数字、未授权的第三方图像；计划进 KDP Select 的书与站外公开文本有任何重合，标出来交作者核对（每个 90 天期内 Kindle 电子书只能经 KDP 和公共图书馆发行，没有可放心公开的比例）。
 - **作者拍板：** 亲历段落留给作者写，脚本不代写；上架、定价、Select 由作者本人操作。
 - **产出：** 合并的 Markdown/HTML（可选 PDF）、KDP 上传用 EPUB 3、上架信息草稿、版税测算。
 

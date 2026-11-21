@@ -36,7 +36,7 @@ def main():
     ap.add_argument("--chapters", type=int, default=10)
     ap.add_argument("--outline", choices=("evidence", "a-to-b"), default="evidence",
                     help="大纲模板：证据锚点式，或 A 点痛点 → B 点理想状态")
-    ap.add_argument("--select", action="store_true", help="计划加入 KDP Select（站外公开须 ≤10%%）")
+    ap.add_argument("--select", action="store_true", help="计划加入 KDP Select（Select 期内 Kindle 电子书只能经 KDP 和公共图书馆发行，书的内容不要以数字形式发到其他渠道）")
     ap.add_argument("--slug", default="")
     ap.add_argument("--repo", default="", help="证据所在的记录仓（git）路径，供 check_book.py 核对")
     a = ap.parse_args()
