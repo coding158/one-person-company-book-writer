@@ -190,7 +190,7 @@ def main():
                     "计划进 KDP Select，须作者人工核对独家发行条件"
                     "（Select 期内 Kindle 电子书只能经 KDP 和公共图书馆发行，没有安全比例；这是人工审核提示，不是违规认定）")
             elif raw_overlap > 0.05:
-                add("WARN", "全书", f"与站外公开文本重合 {overlap:.1%}")
+                add("WARN", "全书", f"与站外公开文本重合 {overlap:.1%}（原始比例 {raw_overlap:.12g}）")
     elif cfg.get("kdp_select"):
         add("WARN", "全书", "计划进 KDP Select，但没给站外公开文本，无法算重合占比")
 
